@@ -1,12 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import M from 'materialize-css'
 
-const Header = () => {
+const Header = props => {
+  // const [url, setUrl] = useState(props)
   useEffect(() => {
     M.Sidenav.init(document.querySelectorAll('.sidenav'), { edge: 'right' })
     M.AutoInit()
   }, [])
+
+  useEffect(() => {
+    console.log({ props })
+  }, [props])
+
   return (
     <>
       <nav className="transparent z-depth-0">
@@ -20,12 +26,24 @@ const Header = () => {
           </a>
           <ul className="right hide-on-med-and-down">
             <li className="nav-item">
-              <Link to="/" className="orange-text text-darken-3">
+              <Link
+                to="/"
+                className={
+                  props.match.path === '/' ? 'orange-text text-darken-3' : ''
+                }
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/projects" className="white-text">
+              <Link
+                to="/projects"
+                className={
+                  props.match.path === '/projects'
+                    ? 'orange-text text-darken-3'
+                    : ''
+                }
+              >
                 Projects
               </Link>
             </li>
@@ -48,7 +66,14 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="white-text">
+              <Link
+                to="/about"
+                className={
+                  props.match.path === '/about'
+                    ? 'orange-text text-darken-3'
+                    : ''
+                }
+              >
                 About
               </Link>
             </li>

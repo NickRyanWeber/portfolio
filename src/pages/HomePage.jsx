@@ -3,69 +3,14 @@ import Header from '../components/Header'
 import FAB from '../components/FAB'
 import { Link } from 'react-router-dom'
 import ProjectCard from '../components/ProjectCard'
+import Projects from '../projects.json'
 
-const HomePage = () => {
-  const projects = [
-    {
-      name: 'Capstone Project',
-      description:
-        'The card game "War", built in React using only a single array to both visualize player and computer hands, as well as handle game logic.',
-      imgLink: 'https://source.unsplash.com/random/1920x1080',
-      readMoreLink: '',
-      gitHubLink: '',
-      checkItOutLink: ''
-    },
-    {
-      name: 'War in a Single Array',
-      description:
-        'The card game "War", built in React using only a single array to both visualize player and computer hands, as well as handle game logic.',
-      imgLink: 'https://source.unsplash.com/random/1920x1080',
-      readMoreLink: '',
-      gitHubLink: '',
-      checkItOutLink: ''
-    },
-    {
-      name: 'Stack-Overflow Clone',
-      description:
-        'The card game "War", built in React using only a single array to both visualize player and computer hands, as well as handle game logic.',
-      imgLink: 'https://source.unsplash.com/random/1920x1080',
-      readMoreLink: '',
-      gitHubLink: '',
-      checkItOutLink: ''
-    },
-    {
-      name: 'Daily Analytics Automation',
-      description:
-        'The card game "War", built in React using only a single array to both visualize player and computer hands, as well as handle game logic.',
-      imgLink: 'https://source.unsplash.com/random/1920x1080',
-      readMoreLink: '',
-      gitHubLink: '',
-      checkItOutLink: ''
-    },
-    {
-      name: 'Time Report Automation',
-      description:
-        'The card game "War", built in React using only a single array to both visualize player and computer hands, as well as handle game logic.',
-      imgLink: 'https://source.unsplash.com/random/1920x1080',
-      readMoreLink: '',
-      gitHubLink: '',
-      checkItOutLink: ''
-    },
-    {
-      name: 'Twilio Schedule Reminder',
-      description:
-        'The card game "War", built in React using only a single array to both visualize player and computer hands, as well as handle game logic.',
-      imgLink: 'https://source.unsplash.com/random/1920x1080',
-      readMoreLink: '',
-      gitHubLink: '',
-      checkItOutLink: ''
-    }
-  ]
+const HomePage = props => {
   return (
     <>
       <FAB />
       <header className="header-image z-depth-5">
-        <Header />
+        <Header {...props} />
         <section className="text-area container">
           <h3 className="white-text special-font">Nicholas Ryan Weber</h3>
           <p className="white-text">Full-Stack Developer</p>
@@ -75,7 +20,7 @@ const HomePage = () => {
         <h2 className="center teal-text text-lighten-5 header-font">
           Projects
         </h2>
-        {projects.map((project, i) => {
+        {Projects.map((project, i) => {
           return <ProjectCard data={project} key={i} />
         })}
       </main>

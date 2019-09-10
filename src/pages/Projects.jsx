@@ -2,10 +2,10 @@ import React from 'react'
 import Header from '../components/Header'
 import FAB from '../components/FAB'
 
-const Projects = () => {
+const Projects = props => {
   return (
     <>
-      <Header />
+      <Header {...props} />
       <FAB />
       <h1>Projects</h1>
     </>
