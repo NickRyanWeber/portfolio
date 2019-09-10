@@ -25,8 +25,7 @@ const ProjectCard = props => {
             <p className="center">
               <Link
                 className="orange-text text-darken-4"
-                target="_blank"
-                to={props.data.readMoreLink}
+                to={`/project/${props.data.projId}`}
               >
                 Read More
               </Link>{' '}

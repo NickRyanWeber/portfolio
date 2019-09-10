@@ -7,7 +7,9 @@ const About = props => {
     <>
       <Header {...props} />
       <FAB />
-      <h1>About</h1>
+      <main className="container">
+        <h1 className="teal-text text-lighten-5 header-font center">Contact</h1>
+      </main>
     </>
   )
 }

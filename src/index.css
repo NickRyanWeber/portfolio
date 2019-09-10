@@ -65,3 +65,8 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #e65100;
 }
+
+.project-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}

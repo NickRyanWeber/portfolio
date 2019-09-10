@@ -3,9 +3,11 @@
     "name": "Capstone Project",
     "description": "The card game 'War', built in React using only a single array to both visualize player and computer hands, as well as handle game logic.",
     "imgLink": "https://source.unsplash.com/random/1920x1080",
-    "readMoreLink": "",
+    "readMoreLink": "/project/capstone",
     "gitHubLink": "",
-    "checkItOutLink": ""
+    "checkItOutLink": "",
+    "projId": "capstone",
+    "youtubeLink": "https://www.youtube-nocookie.com/embed/BK1oiFJGgmU"
   },
   {
     "name": "War in a Single Array",
@@ -13,7 +15,8 @@
     "imgLink": "https://source.unsplash.com/random/1920x1080",
     "readMoreLink": "",
     "gitHubLink": "",
-    "checkItOutLink": ""
+    "checkItOutLink": "",
+    "projId": "war"
   },
   {
     "name": "Stack-Overflow Clone",
@@ -21,7 +24,8 @@
     "imgLink": "https://source.unsplash.com/random/1920x1080",
     "readMoreLink": "",
     "gitHubLink": "",
-    "checkItOutLink": ""
+    "checkItOutLink": "",
+    "projId": "stack-over"
   },
   {
     "name": "Daily Analytics Automation",
@@ -29,7 +33,8 @@
     "imgLink": "https://source.unsplash.com/random/1920x1080",
     "readMoreLink": "",
     "gitHubLink": "",
-    "checkItOutLink": ""
+    "checkItOutLink": "",
+    "projId": "analytics"
   },
   {
     "name": "Time Report Automation",
@@ -37,7 +42,8 @@
     "imgLink": "https://source.unsplash.com/random/1920x1080",
     "readMoreLink": "",
     "gitHubLink": "",
-    "checkItOutLink": ""
+    "checkItOutLink": "",
+    "projId": "time-report"
   },
   {
     "name": "Twilio Schedule Reminder",
@@ -45,6 +51,7 @@
     "imgLink": "https://source.unsplash.com/random/1920x1080",
     "readMoreLink": "",
     "gitHubLink": "",
-    "checkItOutLink": ""
+    "checkItOutLink": "",
+    "projId": "twilio"
   }
 ]
