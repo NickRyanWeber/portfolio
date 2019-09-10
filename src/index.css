@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Special+Elite&display=swap');
+
 :root {
   font: 16px / 1 sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -39,4 +42,25 @@ body {
     width: 100%;
     height: 50vh;
   }
+}
+
+.fab-content > li > a:hover {
+  background-color: #ef6c00 !important;
+}
+
+.fab-content > li > a > i:hover {
+  color: white !important;
+}
+
+.special-font {
+  font-family: 'Special Elite', cursive;
+}
+
+.header-font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
 }

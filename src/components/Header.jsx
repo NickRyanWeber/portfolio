@@ -19,17 +19,17 @@ const Header = () => {
             <i className="material-icons white-text">menu</i>
           </a>
           <ul className="right hide-on-med-and-down">
-            <li>
-              <Link to="/" className="white-text">
+            <li className="nav-item">
+              <Link to="/" className="orange-text text-darken-3">
                 Home
               </Link>
             </li>
-            <li>
+            <li className="nav-item">
               <Link to="/projects" className="white-text">
                 Projects
               </Link>
             </li>
-            <li>
+            <li className="nav-item">
               <a
                 href="https://github.com/NickRyanWeber"
                 target="_blank"
@@ -38,7 +38,7 @@ const Header = () => {
                 GitHub
               </a>
             </li>
-            <li>
+            <li className="nav-item">
               <a
                 href="https://www.linkedin.com/in/nicholasryanweber/"
                 target="_blank"
@@ -47,7 +47,7 @@ const Header = () => {
                 LinkedIn
               </a>
             </li>
-            <li>
+            <li className="nav-item">
               <Link to="/about" className="white-text">
                 About
               </Link>

@@ -67,14 +67,16 @@ const HomePage = () => {
       <header className="header-image z-depth-5">
         <Header />
         <section className="text-area container">
-          <h3 className="white-text">Nicholas Ryan Weber</h3>
+          <h3 className="white-text special-font">Nicholas Ryan Weber</h3>
           <p className="white-text">Full-Stack Developer</p>
         </section>
       </header>
       <main className="container row">
-        <h2 className="center teal-text text-lighten-5">Projects</h2>
-        {projects.map(project => {
-          return <ProjectCard data={project} />
+        <h2 className="center teal-text text-lighten-5 header-font">
+          Projects
+        </h2>
+        {projects.map((project, i) => {
+          return <ProjectCard data={project} key={i} />
         })}
       </main>
     </>

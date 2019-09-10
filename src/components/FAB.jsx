@@ -8,28 +8,28 @@ const FAB = () => {
         <a className="btn-floating btn-large orange darken-3">
           <i className="large material-icons white-text">link</i>
         </a>
-        <ul>
+        <ul className="fab-content">
           <li>
             <a
-              className="btn-floating orange darken-3"
+              className="btn-floating white"
               href="https://github.com/NickRyanWeber"
               target="_blank"
             >
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github orange-text text-darken-3"></i>
             </a>
           </li>
           <li>
             <a
-              className="btn-floating orange darken-3"
+              className="btn-floating white"
               href="https://www.linkedin.com/in/nicholasryanweber/"
               target="_blank"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <i className="fab fa-linkedin-in orange-text text-darken-3"></i>
             </a>
           </li>
           <li>
-            <Link className="btn-floating orange darken-3" to="/about">
-              <i class="far fa-address-card"></i>
+            <Link className="btn-floating white" to="/about">
+              <i className="far fa-address-card orange-text text-darken-3"></i>
             </Link>
           </li>
         </ul>
