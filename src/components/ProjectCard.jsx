@@ -1,51 +1,39 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const ProjectCard = props => {
   return (
     <>
-      <section className="col s12 m6">
-        <div className="card teal lighten-5 z-depth-3 hoverable">
-          <div className="card-image waves-effect waves-block waves-light">
-            <img className="activator" src={props.data.imgLink} alt="" />
-          </div>
-          <div className="card-content">
-            <span className="card-title activator teal-text text-darken-4">
-              {props.data.name}
-            </span>
-          </div>
-          <div className="card-reveal teal lighten-5">
-            <i className="material-icons right card-title teal-text text-darken-4">
-              close
-            </i>
-            <p className="card-title teal-text text-darken-4">
-              {props.data.name}
-            </p>
-            <p className="teal-text text-darken-4">{props.data.description}</p>
-            <p className="center">
-              <Link
-                className="orange-text text-darken-4"
-                to={`/project/${props.data.projId}`}
-              >
-                Read More
-              </Link>{' '}
-              -{' '}
-              <a
-                className="orange-text text-darken-4"
-                target="_blank"
-                href={props.data.checkItOutLink}
-              >
-                Check it out
-              </a>{' '}
-              -{' '}
-              <a
-                className="orange-text text-darken-4"
-                target="_blank"
-                href={props.data.gitHubLink}
-              >
-                GitHub
-              </a>
-            </p>
+      <section className="col s12 m6 l4 card-container">
+        <div className="card teal lighten-5 z-depth-2 hoverable sticky-action">
+          <a href={`#${props.data.projId}`} className="modal-trigger">
+            <div className="card-image waves-effect waves-block waves-light">
+              <img src={props.data.imgLink} alt="" />
+            </div>
+            <div className="card-content">
+              <p className="teal-text text-darken-4">{props.data.name}</p>
+            </div>
+          </a>
+          <div className="card-action card-links center">
+            <a
+              className="orange-text text-darken-4 modal-trigger"
+              href={`#${props.data.projId}`}
+            >
+              <i className="fas fa-info-circle"></i>
+            </a>
+            <a
+              className="orange-text text-darken-4"
+              target="_blank"
+              href={props.data.checkItOutLink}
+            >
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+            <a
+              className="orange-text text-darken-4"
+              target="_blank"
+              href={props.data.gitHubLink}
+            >
+              <i className="fab fa-github"></i>
+            </a>
           </div>
         </div>
       </section>

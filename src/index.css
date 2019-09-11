@@ -37,13 +37,6 @@ body {
   padding: 0;
 }
 
-@media (max-width: 550px) {
-  .header-image {
-    width: 100%;
-    height: 50vh;
-  }
-}
-
 .fab-content > li > a:hover {
   background-color: #ef6c00 !important;
 }
@@ -69,4 +62,32 @@ body {
 .project-buttons {
   display: flex;
   justify-content: space-evenly;
+}
+
+.project-area {
+  padding: 1rem 3rem;
+}
+
+.card-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-container {
+  padding: 1rem 0;
+}
+
+.contact-area {
+  padding: 1rem 3rem;
+}
+
+.row {
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 550px) {
+  .header-image {
+    width: 100%;
+    height: 50vh;
+  }
 }

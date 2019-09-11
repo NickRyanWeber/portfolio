@@ -7,8 +7,7 @@ import M from 'materialize-css'
 const SinglePage = props => {
   useEffect(() => {
     M.Carousel.init(document.querySelectorAll('.carousel'), {
-      indicators: true,
-      numVisible: 3
+      fullWidth: true
     })
   }, [])
 
@@ -22,93 +21,119 @@ const SinglePage = props => {
           <p className="white-text">Full-Stack Developer</p>
         </section>
       </header>
-      <main className="container row">
-        <h2 className="center teal-text text-lighten-5 header-font">
-          Projects
-        </h2>
-        <div className="carousel">
-          <a className="carousel-item" href="#one!">
-            <div className="card medium blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">Card Title</span>
-                <p>
-                  I am a very simple card. I am good at containing small bits of
-                  information. I am convenient because I require little markup
-                  to use effectively.
+      <h2 className="teal-text text-lighten-5 header-font center">Projects</h2>
+      <section className="projects-area">
+        <section className="shown-projects">
+          <div className="nw-card">
+            <div className="card sticky-action">
+              <div className="card-image waves-effect waves-block waves-light">
+                <img
+                  className="activator"
+                  src="https://source.unsplash.com/random/960x540"
+                />
+              </div>
+              <div className="card-content">
+                <span className="card-title activator grey-text text-darken-4">
+                  Card Title<i className="material-icons right">more_vert</i>
+                </span>
+                <p className="card-action">
+                  <a href="#">This is a link</a>
                 </p>
               </div>
-              <div className="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
+              <div className="card-reveal">
+                <span className="card-title grey-text text-darken-4">
+                  Card Title<i className="material-icons right">close</i>
+                </span>
+                <p>
+                  Here is some more information about this product that is only
+                  revealed once clicked on.
+                </p>
               </div>
             </div>
-          </a>
-          <a className="carousel-item" href="#two!">
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">Card Title</span>
-                <p>
-                  I am a very simple card. I am good at containing small bits of
-                  information. I am convenient because I require little markup
-                  to use effectively.
+          </div>
+          <div className="nw-card">
+            <div className="card sticky-action">
+              <div className="card-image waves-effect waves-block waves-light">
+                <img
+                  className="activator"
+                  src="https://source.unsplash.com/random/960x540"
+                />
+              </div>
+              <div className="card-content">
+                <span className="card-title activator grey-text text-darken-4">
+                  Card Title<i className="material-icons right">more_vert</i>
+                </span>
+                <p className="card-action">
+                  <a href="#">This is a link</a>
                 </p>
               </div>
-              <div className="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
-              </div>
-            </div>{' '}
-          </a>
-          <a className="carousel-item" href="#three!">
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">Card Title</span>
+              <div className="card-reveal">
+                <span className="card-title grey-text text-darken-4">
+                  Card Title<i className="material-icons right">close</i>
+                </span>
                 <p>
-                  I am a very simple card. I am good at containing small bits of
-                  information. I am convenient because I require little markup
-                  to use effectively.
+                  Here is some more information about this product that is only
+                  revealed once clicked on.
                 </p>
-              </div>
-              <div className="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
               </div>
             </div>
-          </a>
-          <a className="carousel-item" href="#four!">
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">Card Title</span>
-                <p>
-                  I am a very simple card. I am good at containing small bits of
-                  information. I am convenient because I require little markup
-                  to use effectively.
+          </div>
+          <div className="nw-card">
+            <div className="card sticky-action">
+              <div className="card-image waves-effect waves-block waves-light">
+                <img
+                  className="activator"
+                  src="https://source.unsplash.com/random/960x540"
+                />
+              </div>
+              <div className="card-content">
+                <span className="card-title activator grey-text text-darken-4">
+                  Card Title<i className="material-icons right">more_vert</i>
+                </span>
+                <p className="card-action">
+                  <a href="#">This is a link</a>
                 </p>
               </div>
-              <div className="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
-              </div>
-            </div>{' '}
-          </a>
-          <a className="carousel-item" href="#five!">
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">Card Title</span>
+              <div className="card-reveal">
+                <span className="card-title grey-text text-darken-4">
+                  Card Title<i className="material-icons right">close</i>
+                </span>
                 <p>
-                  I am a very simple card. I am good at containing small bits of
-                  information. I am convenient because I require little markup
-                  to use effectively.
+                  Here is some more information about this product that is only
+                  revealed once clicked on.
                 </p>
               </div>
-              <div className="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
+            </div>
+          </div>
+          <div className="nw-card">
+            <div className="card sticky-action">
+              <div className="card-image waves-effect waves-block waves-light">
+                <img
+                  className="activator"
+                  src="https://source.unsplash.com/random/960x540"
+                />
               </div>
-            </div>{' '}
-          </a>
-        </div>
-      </main>
+              <div className="card-content">
+                <span className="card-title activator grey-text text-darken-4">
+                  Card Title<i className="material-icons right">more_vert</i>
+                </span>
+                <p className="card-action">
+                  <a href="#">This is a link</a>
+                </p>
+              </div>
+              <div className="card-reveal">
+                <span className="card-title grey-text text-darken-4">
+                  Card Title<i className="material-icons right">close</i>
+                </span>
+                <p>
+                  Here is some more information about this product that is only
+                  revealed once clicked on.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </>
   )
 }

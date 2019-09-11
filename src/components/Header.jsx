@@ -17,15 +17,16 @@ const Header = props => {
     <>
       <nav className="transparent z-depth-0">
         <div className="nav-wrapper container">
-          <a
+          {/* <a
             href="#"
             data-target="mobile-demo"
             className="sidenav-trigger right"
           >
             <i className="material-icons white-text">menu</i>
-          </a>
-          <ul className="right hide-on-med-and-down">
-            <li className="nav-item">
+          </a> */}
+          {/* <ul className="right hide-on-med-and-down"> */}
+          <ul className="right">
+            {/* <li className="nav-item">
               <Link
                 to="/"
                 className={
@@ -34,7 +35,7 @@ const Header = props => {
               >
                 Home
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 to="/projects"
@@ -47,7 +48,7 @@ const Header = props => {
                 Projects
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
                 href="https://github.com/NickRyanWeber"
                 target="_blank"
@@ -64,7 +65,7 @@ const Header = props => {
               >
                 LinkedIn
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 to="/about"
@@ -74,14 +75,14 @@ const Header = props => {
                     : ''
                 }
               >
-                About
+                Contact
               </Link>
             </li>
           </ul>
         </div>
       </nav>
 
-      <ul
+      {/* <ul
         className="sidenav teal lighten-5 teal-text text-darken-4 no-autoinit"
         id="mobile-demo"
       >
@@ -97,7 +98,7 @@ const Header = props => {
         <li>
           <Link to="/about">About</Link>
         </li>
-      </ul>
+      </ul> */}
     </>
   )
 }
