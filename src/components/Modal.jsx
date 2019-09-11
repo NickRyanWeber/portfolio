@@ -7,7 +7,7 @@ const Modal = props => {
       <div id={props.data.projId} className="modal">
         <div className="modal-content">
           <h4>{props.data.name}</h4>
-          <p>A bunch of text</p>
+          <p>{props.data.description}</p>
         </div>
         <div className="modal-footer">
           <a

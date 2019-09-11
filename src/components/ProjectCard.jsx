@@ -15,24 +15,18 @@ const ProjectCard = props => {
           </a>
           <div className="card-action card-links center">
             <a
-              className="orange-text text-darken-4 modal-trigger"
-              href={`#${props.data.projId}`}
-            >
-              <i className="fas fa-info-circle"></i>
-            </a>
-            <a
               className="orange-text text-darken-4"
               target="_blank"
               href={props.data.checkItOutLink}
             >
-              <i className="fas fa-external-link-alt"></i>
+              DEMO
             </a>
             <a
               className="orange-text text-darken-4"
               target="_blank"
               href={props.data.gitHubLink}
             >
-              <i className="fab fa-github"></i>
+              GitHub
             </a>
           </div>
         </div>

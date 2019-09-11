@@ -10,6 +10,11 @@ const FAB = () => {
         </a>
         <ul className="fab-content">
           <li>
+            <Link className="btn-floating white" to="/about">
+              <i className="fab fa-slack orange-text text-darken-3"></i>
+            </Link>
+          </li>
+          <li>
             <a
               className="btn-floating white"
               href="https://github.com/NickRyanWeber"
