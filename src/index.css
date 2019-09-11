@@ -85,6 +85,10 @@ body {
   margin-bottom: 0 !important;
 }
 
+.nwtest {
+  border: 5px solid red;
+}
+
 @media (max-width: 550px) {
   .header-image {
     width: 100%;

@@ -10,28 +10,28 @@ const HomePage = props => {
   return (
     <>
       <FAB />
-      <header className="header-image z-depth-5">
-        <Header {...props} />
-        <section className="text-area container">
-          <h3 className="white-text special-font">Nicholas Ryan Weber</h3>
-          <p className="white-text">Full-Stack Developer</p>
-          <br></br>
-          <section className="white-text">
-            <a href="" target="_blank" className="orange-text text-darken-4">
-              GitHub
-            </a>{' '}
-            -{' '}
-            <a href="" target="_blank" className="orange-text text-darken-4">
-              LinkedIn
-            </a>{' '}
-            -{' '}
-            <a href="" target="_blank" className="orange-text text-darken-4">
-              Resume
-            </a>
-          </section>
-        </section>
-      </header>
       <main>
+        <header className="header-image z-depth-3 nwtest">
+          <Header {...props} />
+          <section className="text-area container">
+            <h3 className="white-text special-font">Nicholas Ryan Weber</h3>
+            <p className="white-text">Full-Stack Developer</p>
+            <br></br>
+            <section className="white-text">
+              <a href="" target="_blank" className="orange-text text-darken-4">
+                GitHub
+              </a>{' '}
+              -{' '}
+              <a href="" target="_blank" className="orange-text text-darken-4">
+                LinkedIn
+              </a>{' '}
+              -{' '}
+              <a href="" target="_blank" className="orange-text text-darken-4">
+                Resume
+              </a>
+            </section>
+          </section>
+        </header>
         <section className="row project-area teal darken-3">
           <h2 className="center teal-text text-lighten-5 header-font">
             Projects
