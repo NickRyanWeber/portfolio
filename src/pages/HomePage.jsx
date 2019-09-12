@@ -83,7 +83,7 @@ const HomePage = props => {
             </p>
             <a
               href="mailto:nicholasryanweber@gmail.com"
-              className="white-text contact-info"
+              className="white-text contact-info contact-email"
             >
               NicholasRyanWeber@gmail.com
             </a>
