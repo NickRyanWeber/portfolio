@@ -12,7 +12,7 @@ const HomePage = props => {
       <FAB />
       <main>
         <Header {...props} />
-        <section className="row project-area teal darken-4">
+        <section className="row project-area teal darken-4" id="projects">
           <h2 className="center teal-text text-lighten-5 header-font">
             Projects
           </h2>

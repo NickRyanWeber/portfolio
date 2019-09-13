@@ -20,7 +20,7 @@ const Header = props => {
           <div className="nav-wrapper container">
             <ul className="right">
               <li className="nav-item">
-                <Link to="/#" className="nav-link">
+                <Link to="#projects" className="nav-link">
                   Projects
                 </Link>
               </li>
