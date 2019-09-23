@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import M from 'materialize-css'
+import * as Scroll from 'react-scroll'
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from 'react-scroll'
 
 const Header = props => {
   // const [url, setUrl] = useState(props)
@@ -20,12 +28,28 @@ const Header = props => {
           <div className="nav-wrapper container">
             <ul className="right">
               <li className="nav-item">
-                <Link to="#projects" className="nav-link">
+                <Link
+                  className="nav-link"
+                  activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   Projects
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="#" className="nav-link">
+                <Link
+                  className="nav-link"
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   Contact
                 </Link>
               </li>

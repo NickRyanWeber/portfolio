@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Resume from '../pictures/NicholasRyanWeberResume2019.pdf'
 
 const FAB = () => {
   return (
@@ -10,9 +11,13 @@ const FAB = () => {
         </a>
         <ul className="fab-content">
           <li>
-            <Link className="btn-floating white" to="/about">
+            <a
+              className="btn-floating white"
+              href="slack://user?team=T03QUJQ7L&id=ULB53KU7R"
+              target="_blank"
+            >
               <i className="fab fa-slack orange-text text-darken-3"></i>
-            </Link>
+            </a>
           </li>
           <li>
             <a
@@ -33,9 +38,9 @@ const FAB = () => {
             </a>
           </li>
           <li>
-            <Link className="btn-floating white" to="/about">
+            <a className="btn-floating white" target="_blank" href={Resume}>
               <i className="far fa-address-card orange-text text-darken-3"></i>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
