@@ -13,21 +13,35 @@ const ProjectCard = props => {
               <p className="teal-text text-darken-4">{props.data.name}</p>
             </div>
           </a>
-          <div className="card-action card-links center">
+          <div className="card-action card-links">
             <a
               className="orange-text text-darken-4"
-              target="_blank"
-              href={props.data.checkItOutLink}
+              href={`#${props.data.projId}`}
             >
-              DEMO
+              Read More
             </a>
-            <a
-              className="orange-text text-darken-4"
-              target="_blank"
-              href={props.data.gitHubLink}
-            >
-              GitHub
-            </a>
+            {props.data.checkItOutLink ? (
+              <a
+                className="orange-text text-darken-4"
+                target="_blank"
+                href={props.data.checkItOutLink}
+              >
+                DEMO
+              </a>
+            ) : (
+              <a className="grey-text">DEMO</a>
+            )}
+            {props.data.gitHubLink ? (
+              <a
+                className="orange-text text-darken-4"
+                target="_blank"
+                href={props.data.gitHubLink}
+              >
+                GitHub
+              </a>
+            ) : (
+              <a className="grey-text">Github</a>
+            )}
           </div>
         </div>
       </section>

@@ -4,7 +4,7 @@
     "description": "The card game 'War', built in React using only a single array to both visualize player and computer hands, as well as handle game logic.",
     "imgLink": "https://source.unsplash.com/random/1920x1080",
     "readMoreLink": "/project/capstone",
-    "gitHubLink": "",
+    "gitHubLink": "w",
     "checkItOutLink": "",
     "projId": "capstone",
     "youtubeLink": "https://www.youtube-nocookie.com/embed/BK1oiFJGgmU"
@@ -16,7 +16,8 @@
     "readMoreLink": "",
     "gitHubLink": "",
     "checkItOutLink": "",
-    "projId": "war"
+    "projId": "war",
+    "youtubeLink": "https://www.youtube.com/embed/BK1oiFJGgmU"
   },
   {
     "name": "Stack-Overflow Clone",
@@ -34,7 +35,8 @@
     "readMoreLink": "",
     "gitHubLink": "",
     "checkItOutLink": "",
-    "projId": "analytics"
+    "projId": "analytics",
+    "youtubeLink": "https://www.youtube.com/embed/BK1oiFJGgmU"
   },
   {
     "name": "Time Report Automation",
@@ -43,7 +45,8 @@
     "readMoreLink": "",
     "gitHubLink": "",
     "checkItOutLink": "",
-    "projId": "time-report"
+    "projId": "time-report",
+    "youtubeLink": "https://www.youtube.com/embed/BK1oiFJGgmU"
   },
   {
     "name": "Twilio Schedule Reminder",
@@ -52,6 +55,7 @@
     "readMoreLink": "",
     "gitHubLink": "",
     "checkItOutLink": "",
-    "projId": "twilio"
+    "projId": "twilio",
+    "youtubeLink": "https://www.youtube.com/embed/BK1oiFJGgmU"
   }
 ]

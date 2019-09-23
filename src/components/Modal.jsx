@@ -3,27 +3,42 @@ import React from 'react'
 const Modal = props => {
   return (
     <>
-      {/* <!-- Modal Structure --> */}
-      <div id={props.data.projId} className="modal">
+      <div id={props.data.projId} className="modal modal-fixed-footer">
         <div className="modal-content">
           <h4>{props.data.name}</h4>
           <p>{props.data.description}</p>
+          {props.data.youtubeLink ? (
+            <div className="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src={props.data.youtubeLink}
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
         <div className="modal-footer">
           <a
-            className="orange-text text-darken-4"
+            className="orange-text text-darken-4 btn-flat"
             target="_blank"
             href={props.data.checkItOutLink}
           >
-            Link
+            Demo
           </a>
-          {' - '}
           <a
-            className="orange-text text-darken-4"
+            className="orange-text text-darken-4 btn-flat"
             target="_blank"
             href={props.data.gitHubLink}
           >
             GitHub
+          </a>
+          <a className="orange-text text-darken-4 btn-flat modal-close">
+            Close
           </a>
         </div>
       </div>
