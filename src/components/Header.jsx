@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import M from 'materialize-css'
-import * as Scroll from 'react-scroll'
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from 'react-scroll'
+import { Link } from 'react-scroll'
+import Resume from '../pictures/NicholasRyanWeberResume2019.pdf'
 
 const Header = props => {
   // const [url, setUrl] = useState(props)
@@ -77,7 +70,7 @@ const Header = props => {
               LinkedIn
             </a>{' '}
             -{' '}
-            <a href="" target="_blank" className="header-link">
+            <a href={Resume} target="_blank" className="header-link">
               Resume
             </a>
           </section>

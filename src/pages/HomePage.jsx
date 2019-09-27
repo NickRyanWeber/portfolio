@@ -5,15 +5,6 @@ import ProjectCard from '../components/ProjectCard'
 import Projects from '../projects.json'
 import Modal from '../components/Modal'
 import Resume from '../pictures/NicholasRyanWeberResume2019.pdf'
-import * as Scroll from 'react-scroll'
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from 'react-scroll'
 
 const HomePage = props => {
   return (
@@ -40,7 +31,7 @@ const HomePage = props => {
           <section className="skills-section">
             <section>
               <h5 className="white-text">Development</h5>
-              <ul>
+              <ul className="skill-list">
                 <li className="white-text">C# / .NET Core</li>
                 <li className="white-text">React / React-Hooks</li>
                 <li className="white-text">APIs</li>
@@ -53,7 +44,7 @@ const HomePage = props => {
             </section>
             <section>
               <h5 className="white-text">Professional</h5>
-              <ul>
+              <ul className="skill-list">
                 <li className="white-text">Automation</li>
                 <li className="white-text">Analytics</li>
                 <li className="white-text">Marketing</li>
@@ -66,7 +57,7 @@ const HomePage = props => {
             </section>
             <section>
               <h5 className="white-text">Personal</h5>
-              <ul>
+              <ul className="skill-list">
                 <li className="white-text">Public Speaking</li>
                 <li className="white-text">Sign Language</li>
                 <li className="white-text">Zapier / IFTTT</li>
@@ -81,6 +72,13 @@ const HomePage = props => {
             Contact
           </h2>
           <section className="center contact-section">
+            <a
+              href="mailto:nicholasryanweber@gmail.com"
+              target="_blank"
+              className="white-text contact-info contact-email"
+            >
+              NicholasRyanWeber@gmail.com
+            </a>
             <p className="contact-group">
               <a
                 className="orange darken-2 white-text btn-large contact-info-btn"
@@ -111,13 +109,6 @@ const HomePage = props => {
                 Slack
               </a>
             </p>
-            <a
-              href="mailto:nicholasryanweber@gmail.com"
-              target="_blank"
-              className="white-text contact-info contact-email"
-            >
-              NicholasRyanWeber@gmail.com
-            </a>
           </section>
         </section>
       </main>

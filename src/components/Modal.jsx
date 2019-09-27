@@ -23,20 +23,28 @@ const Modal = props => {
           )}
         </div>
         <div className="modal-footer">
-          <a
-            className="orange-text text-darken-4 btn-flat"
-            target="_blank"
-            href={props.data.checkItOutLink}
-          >
-            Demo
-          </a>
-          <a
-            className="orange-text text-darken-4 btn-flat"
-            target="_blank"
-            href={props.data.gitHubLink}
-          >
-            GitHub
-          </a>
+          {props.data.checkItOutLink ? (
+            <a
+              className="orange-text text-darken-4 btn-flat"
+              target="_blank"
+              href={props.data.checkItOutLink}
+            >
+              Demo
+            </a>
+          ) : (
+            <a className="grey-text btn-flat">Demo</a>
+          )}
+          {props.data.gitHubLink ? (
+            <a
+              className="orange-text text-darken-4 btn-flat"
+              target="_blank"
+              href={props.data.gitHubLink}
+            >
+              GitHub
+            </a>
+          ) : (
+            <a className="grey-text btn-flat">Github</a>
+          )}
           <a className="orange-text text-darken-4 btn-flat modal-close">
             Close
           </a>
