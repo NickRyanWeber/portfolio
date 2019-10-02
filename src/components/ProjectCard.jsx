@@ -1,4 +1,10 @@
 import React from 'react'
+import AnalyticsAutomation from '../pictures/AnalyticsAutomation.jpg'
+import GoogleAnalyticsFilterTool from '../pictures/GoogleAnalyticsFilterTool.jpg'
+import SDGOverflow from '../pictures/SDGOverflow.jpg'
+import TimeSheet from '../pictures/TimeSheet.jpg'
+import WarSingleArray from '../pictures/WarSingleArray.jpg'
+import Zydeco from '../pictures/Zydeco.jpg'
 
 const ProjectCard = props => {
   return (
